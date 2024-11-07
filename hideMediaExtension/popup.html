@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>隐藏视频/图片</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <label>
+    <input type="checkbox" id="hideImages"> 隐藏图片
+  </label>
+  <label>
+    <input type="checkbox" id="hideVideos"> 隐藏视频
+  </label>
+  <label>
+    <input type="checkbox" id="defaultExecute"> 进入页面自动执行
+  </label>
+  <label for="whitelistInput">
+    白名单:
+    <input type="text" id="whitelistInput" placeholder="例如：example.com, test.com">
+    <small>选择“进入页面自动执行”时不会默认隐藏</small>
+  </label>
+  <label for="blacklistInput">
+    黑名单:
+    <input type="text" id="blacklistInput" placeholder="例如：example.com, test.com">
+    <small>不选“进入页面自动执行”时也会自动隐藏</small>
+  </label>
+
+  <button id="forceHide">点击隐藏</button>
+  <script src="popup.js"></script>
+</body>
+</html> 
